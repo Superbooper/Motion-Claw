@@ -1,0 +1,127 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="KmGtJrkMk4i0R0RC90Mq">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="IMU ARRAY" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-2" edge="1" parent="1" source="EEL_gyMvDGvqSY6lf7Vn-1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="120" />
+            </Array>
+            <mxPoint x="140" y="580" as="sourcePoint" />
+            <mxPoint x="440" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="SDA -&amp;gt; GPIO 21" vertex="1">
+          <mxGeometry height="30" width="95" x="405" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="SDA -&amp;gt;&amp;nbsp; GPIO25" vertex="1">
+          <mxGeometry height="30" width="110" x="397.5" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="SCL -&amp;gt; GPIO 22" vertex="1">
+          <mxGeometry height="30" width="95" x="405" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="SCL-&amp;gt; GPIO 26" vertex="1">
+          <mxGeometry height="30" width="95" x="405" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="input capture&lt;div&gt;get x amount of input over y time average to account for innacurcaies hand tremors&lt;br&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="110" x="385" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="array of last X input captures" vertex="1">
+          <mxGeometry height="60" width="120" x="385" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-9" edge="1" parent="1" source="EEL_gyMvDGvqSY6lf7Vn-7" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.469;entryY=-0.034;entryDx=0;entryDy=0;entryPerimeter=0;" target="EEL_gyMvDGvqSY6lf7Vn-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="340" as="sourcePoint" />
+            <mxPoint x="470" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="happens for x y and z, and the one used gyro" vertex="1">
+          <mxGeometry height="60" width="95" x="285" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-11" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="360" as="sourcePoint" />
+            <mxPoint x="440" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="checks last 2 accel values determines change in velocity" vertex="1">
+          <mxGeometry height="60" width="132.5" x="373.75" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-13" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="500" y="340" as="sourcePoint" />
+            <mxPoint x="600" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="gyro values" vertex="1">
+          <mxGeometry height="60" width="120" x="570" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-15" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="460" as="sourcePoint" />
+            <mxPoint x="440" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="change in velocity in array of ints" vertex="1">
+          <mxGeometry height="30" width="132.5" x="310" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="coordinate translation:&lt;div&gt;takes change in velocity applys to a array of x y z coordinates&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="146.25" x="373.75" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Reset button zeroes coordiantes for calibration" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="EEL_gyMvDGvqSY6lf7Vn-20" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="EEL_gyMvDGvqSY6lf7Vn-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="470" as="sourcePoint" />
+            <mxPoint x="310" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-jDlhqjkOst_LXOwFC8o-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Arm servo translation:&lt;div&gt;takes x y z and translates to servo rotation&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="110" x="240" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="-jDlhqjkOst_LXOwFC8o-2" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Claw servo translation: takes X Y and rotation translates to servo rotation" vertex="1">
+          <mxGeometry height="120" width="120" x="520" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="-jDlhqjkOst_LXOwFC8o-3" edge="1" parent="1" source="EEL_gyMvDGvqSY6lf7Vn-17" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" target="-jDlhqjkOst_LXOwFC8o-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="650" as="sourcePoint" />
+            <mxPoint x="410" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-jDlhqjkOst_LXOwFC8o-4" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-jDlhqjkOst_LXOwFC8o-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="520" y="600" as="sourcePoint" />
+            <mxPoint x="570" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-jDlhqjkOst_LXOwFC8o-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.535;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" target="-jDlhqjkOst_LXOwFC8o-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="640" y="460" as="sourcePoint" />
+            <mxPoint x="410" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-jDlhqjkOst_LXOwFC8o-6" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Servos can host on GPIO 13,14,16,17,18,&lt;div&gt;19,23,27,32,33&lt;/div&gt;" vertex="1">
+          <mxGeometry height="132.5" width="132.5" x="373.75" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="-jDlhqjkOst_LXOwFC8o-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="-jDlhqjkOst_LXOwFC8o-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="285" y="790" as="sourcePoint" />
+            <mxPoint x="335" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-jDlhqjkOst_LXOwFC8o-8" edge="1" parent="1" source="-jDlhqjkOst_LXOwFC8o-2" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="-jDlhqjkOst_LXOwFC8o-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="860" as="sourcePoint" />
+            <mxPoint x="450" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
